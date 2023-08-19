@@ -28,24 +28,7 @@ public class BrowserUtility {
 			driver=new FirefoxDriver();
 			break;	
 		case "SAUCELABS":
-			driver= new ChromeDriver();
-			ChromeOptions browserOptions = new ChromeOptions();
-			browserOptions.setPlatformName("Windows 11");
-			browserOptions.setBrowserVersion("latest");
-			Map<String, Object> sauceOptions = new HashMap<>();
-			sauceOptions.put("username", "oauth-igetcode-d1b2f");
-			sauceOptions.put("accessKey", "e5561e90-566f-4784-ac13-df5d8528040d");
-			sauceOptions.put("build", "selenium-build-SI11F");
-			sauceOptions.put("name", "<your test name>");
-			browserOptions.setCapability("sauce:options", sauceOptions);
-			URL url;
-			try {
-				url = new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub");
-				driverRm= new RemoteWebDriver(url, browserOptions);
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			break;
 			
 		}
 		return driver;
