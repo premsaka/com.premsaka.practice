@@ -37,6 +37,47 @@
     <artifactId>log4j-core</artifactId>
     <version>2.20.0</version>
 </dependency>
+<!-- cucumber depedency -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.13.0</version>
+</dependency>
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.13.0</version>
+</dependency>
+<!-- Depedency for API testing -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.3.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>5.3.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-schema-validator</artifactId>
+    <version>5.3.0</version>
+</dependency>
+<!-- Mobile device testing required depedency -->
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>8.5.1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+</dependency>
 
 
   </dependencies>

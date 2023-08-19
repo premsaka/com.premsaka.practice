@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.premsaka.practice.iframes.HandleIFrames">
+      <class name="mobileTesting.TestBasic">
         <methods>
-          <include name="testIframes"/>
-          <include name="closeBroser"/>
-          <include name="setupDriver"/>
+          <include name="setUpMobiledevice"/>
+          <include name="teardown"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.premsaka.practice.iframes.HandleIFrames -->
+      </class> <!-- mobileTesting.TestBasic -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
